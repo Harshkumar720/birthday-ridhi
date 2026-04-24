@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- MOBILE VIEW -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Ridhi</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+<!-- ================= 🎬 CINEMATIC INTRO ================= -->
+<div id="intro" class="screen active cinematic">
+
+    <div class="fade-layer"></div>
+    <div class="overlay"></div>
+
+    <div class="intro-content">
+        <h1 class="cinematic-text glow-text">Ridhi</h1>
+        <p class="cinematic-sub">A small surprise is waiting…</p>
+        <button class="enter-btn" onclick="startExperience()">Enter 💖</button>
+    </div>
+
+</div>
+
+<!-- ================= 💖 FULL FORM ================= -->
+<div id="fullform" class="screen">
+
+    <!-- Stage 1: Letters -->
+    <div class="letter-stage">
+        <span class="big-letter">R</span>
+        <span class="big-letter">I</span>
+        <span class="big-letter">D</span>
+        <span class="big-letter">H</span>
+        <span class="big-letter">I</span>
+    </div>
+
+    <!-- Stage 2: Meanings -->
+    <div class="meaning-stage">
+
+        <div class="fullform-card">
+
+            <h2 class="fullform-title">R I D H I</h2>
+
+            <div class="fullform-list">
+
+                <div class="item">
+                    <span>R</span>
+                    <p>Responsible</p>
+                </div>
+
+                <div class="item">
+                    <span>I</span>
+                    <p>Intelligent</p>
+                </div>
+
+                <div class="item">
+                    <span>D</span>
+                    <p>Daring</p>
+                </div>
+
+                <div class="item">
+                    <span>D</span>
+                    <p>Dance Lover</p>
+                </div>
+
+                <div class="item">
+                    <span>H</span>
+                    <p>Humble</p>
+                </div>
+
+                <div class="item">
+                    <span>I</span>
+                    <p>Impressive Personality</p>
+                </div>
+
+            </div>
+
+            <button onclick="nextScreen()">Next ➡</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= 💬 MESSAGE ================= -->
+<div id="message" class="screen">
+    <h2 id="typedText"></h2>
+    <h3 id="countdown"></h3>
+    <button onclick="nextScreen()">Next ➡</button>
+</div>
+
+<!-- ================= 📸 GALLERY ================= -->
+<div id="gallery" class="screen">
+    <h2>Some Memories 📸</h2>
+    <img id="slide" src="images/photo1.jpg">
+    <button onclick="nextScreen()">Next ➡</button>
+</div>
+
+<!-- ================= 🎉 FINAL ================= -->
+<div id="final" class="screen">
+
+    <div class="final-card">
+
+        <h1 class="final-title">🎉 Happy Birthday Ridhi (Daddu) 🎉</h1>
+
+        <p class="final-msg">
+            You are not just my sister, you are my best friend, my support system,
+            and someone I can always rely on.
+            I’m really lucky to have you in my life ❤️
+        </p>
+
+        <button class="gift-btn" onclick="showSurprise()">Open Your Gift 🎁</button>
+
+        <div id="surprise" class="hidden">
+            <h2 class="surprise-text">💫 You are the best sister ever 💫</h2>
+            <p>And yes… I still owe you something 😄</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= 🎵 AUDIO ================= -->
+<audio id="music" loop preload="auto">
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ================= ⚙️ JS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
